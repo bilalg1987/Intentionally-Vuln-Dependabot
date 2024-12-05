@@ -1,0 +1,16 @@
+{
+  "name": "vulnerable-project",
+  "version": "1.0.0",
+  "description": "A project to test Dependabot alerts",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "lodash": "4.17.0",  // Older version with known vulnerabilities
+    "express": "3.0.0"   // Deprecated and has security issues
+  },
+  "devDependencies": {
+    "gulp": "3.9.1"      // Vulnerable version of Gulp
+  }
+}
